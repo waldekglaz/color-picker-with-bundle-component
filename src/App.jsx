@@ -125,7 +125,7 @@ function Card({
             onClick={() => setActiveColor(index)}></div>
         ))}
       </div>
-      <a href="#" className="card__cta">
+      <a href={ctaUrl} className="card__cta">
         Learn more
       </a>
     </div>
