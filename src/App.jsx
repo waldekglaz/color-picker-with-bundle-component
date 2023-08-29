@@ -8,7 +8,7 @@ const deals = [
         name: 'Phantom Black',
         cssColor: '#211E16',
         image:
-          'https://images.samsung.com/ae_ar/smartphones/galaxy-z-flip5/images/galaxy-z-flip5-common-buynow-banner-a.jpg',
+          'https://images.samsung.com/ae_ar/smartphones/galaxy-z-flip5/images/galaxy-z-flip5-common-introduction-banner-a.jpg',
       },
       {
         name: 'Icy Blue',
@@ -24,7 +24,7 @@ const deals = [
       },
     ],
     activeColor: 0,
-    ctaUrl: '#',
+    ctaUrl: '/africa_en/smartphones/galaxy-z-fold5/',
     voucher: 'GHS 1,500 e-voucher',
     bgColor: '#F4F5FE',
   },
@@ -57,7 +57,7 @@ const deals = [
       },
     ],
     activeColor: 3,
-    ctaUrl: '#',
+    ctaUrl: '/africa_en/smartphones/galaxy-z-flip5/',
     voucher: 'GHS 2000 e-voucher',
     bgColor: '#E2EEEA',
   },
