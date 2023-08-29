@@ -1,0 +1,76 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  padding: 10px 10px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: 'SamsungOne', arial, sans-serif;
+}
+
+.voucher {
+  background-color: #2189e0;
+  color: #fff;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  align-self: flex-start;
+}
+.card__title {
+  font-size: 24px;
+  margin-top: 24px;
+}
+.colors {
+  margin: 12px 0;
+}
+.color__btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #000;
+  font-size: 0;
+}
+
+.card img {
+  width: 100%;
+}
+.color__btn.active {
+  border: 5px solid #000;
+  outline: 4px solid #fff;
+  outline-offset: -4px;
+}
+.colors__btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.card__cta {
+  border: 1px solid #000;
+  margin-top: 40px;
+  padding: 6px 16px;
+  border-radius: 24px;
+  color: #000;
+  font-weight: bold;
+}
+@media (min-width: 535px) {
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .card {
+    width: 520px;
+  }
+}
