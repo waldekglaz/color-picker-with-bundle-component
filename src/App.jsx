@@ -104,7 +104,7 @@ function Card({
 
   return (
     <div className="card" style={{ backgroundColor: bgColor }}>
-      <div className="voucher">{voucher}</div>
+      {/* <div className="voucher">{voucher}</div> */}
       <div className="active-photo">
         <img
           src={activeColorData.image}
