@@ -8,7 +8,7 @@ const deals = [
         name: 'Phantom Black',
         cssColor: '#211E16',
         image:
-          'https://images.samsung.com/ae_ar/smartphones/galaxy-z-flip5/images/galaxy-z-flip5-common-introduction-banner-a.jpg',
+          'https://images.samsung.com/ae_ar/smartphones/galaxy-z-flip5/images/galaxy-z-flip5-common-buynow-banner-a.jpg',
       },
       {
         name: 'Icy Blue',
