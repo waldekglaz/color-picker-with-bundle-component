@@ -1,3 +1,15 @@
+/* AEM visible items */
+.hideInAem {
+  display: none;
+}
+.aem-AuthorLayer-Edit .hideInAem {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: red;
+  font-weight: 700;
+}
+/* AEM visible items */
 .cards {
   display: flex;
   flex-direction: column;
@@ -9,12 +21,16 @@
 .card {
   position: relative;
   padding: 10px 10px 34px;
+
+  border-radius: 10px;
+  font-family: 'SamsungSharpSans', arial, sans-serif;
+}
+.phone-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  font-family: 'SamsungOne', arial, sans-serif;
+  margin-bottom: 40px;
 }
 
 .voucher {
@@ -27,7 +43,7 @@
 }
 .card__title {
   font-size: 24px;
-  margin-top: 24px;
+  margin-top: -30px;
 }
 .colors {
   margin: 12px 0;
@@ -40,8 +56,13 @@
   border: 1px solid #000;
   font-size: 0;
 }
+.card h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
 
-.card img {
+.card__img {
   width: 100%;
 }
 .color__btn.active {
@@ -69,14 +90,57 @@
   background-color: #000;
   color: #fff;
 }
-@media (min-width: 535px) {
-  .cards {
-    flex-direction: row;
-    justify-content: center;
+.deals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.deal__icon {
+  width: 44px;
+  height: auto;
+}
+.deal img {
+  max-width: 160px;
+}
+.deal__text {
+  width: 140px;
+  line-height: 1.4;
+  text-align: center;
+  margin: 24px auto;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .deal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media (width: 768px) {
+  .deal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 @media (min-width: 1024px) {
-  .card {
-    width: 520px;
+  .cards {
+    gap: 130px;
+  }
+  .card h3 {
+    margin-top: 73px;
+  }
+  .deal-wrapper {
+    align-items: flex-start;
+  }
+  .deals {
+    flex-direction: row;
+    margin-top: 140px;
+  }
+  .deal img {
+    max-width: 220px;
   }
 }
