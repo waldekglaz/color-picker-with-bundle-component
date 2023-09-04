@@ -27,7 +27,7 @@ const deals = [
       {
         imgUrl:
           'https://stg-images.samsung.com/is/image/samsung/assets/africa_en/offer/kenya-2023-foldables-promo/phones.png',
-        text: 'Get FREE Slim Pen cover when you buy Galaxy Z Fold5',
+        text: 'Get FREE<br/> Slim Pen cover<br/> when you buy Galaxy Z Fold5',
       },
       {
         imgUrl:
@@ -72,12 +72,12 @@ const deals = [
       {
         imgUrl:
           'https://stg-images.samsung.com/is/image/samsung/assets/africa_en/offer/kenya-2023-foldables-promo/watch.png',
-        text: 'Get FREE Slim Pen cover when you buy Galaxy Z Fold5',
+        text: '<p>Get FREE<br> Slim Pen cover when you buy Galaxy Z Fold5</p>',
       },
       {
         imgUrl:
           'https://stg-images.samsung.com/is/image/samsung/assets/africa_en/offer/kenya-2023-foldables-promo/samsung-care.png',
-        text: '1 year FREE Screen replacement*',
+        text: '<p>1 year FREE Screen replacement*</p>',
       },
     ],
     activeColor: 3,
@@ -165,7 +165,11 @@ function Card({
             <div className="deal">
               <div className="deal-item">
                 <img src={deal[0].imgUrl} alt={`${phone} deal`} />
-                <p className="deal__text">{deal[0].text}</p>
+                <div
+                  className="deal__text"
+                  dangerouslySetInnerHTML={{ __html: deal[0].text }}
+                />
+                {/* <p className="deal__text">{deal[0].text}</p> */}
               </div>
             </div>
             <img
@@ -176,7 +180,11 @@ function Card({
             <div className="deal">
               <div className="deal-item">
                 <img src={deal[1].imgUrl} alt={`${phone} deal`} />
-                <p className="deal__text">{deal[1].text}</p>
+                {/* <p className="deal__text">{deal[1].text}</p> */}
+                <div
+                  className="deal__text"
+                  dangerouslySetInnerHTML={{ __html: deal[1].text }}
+                />
               </div>
             </div>
           </div>
